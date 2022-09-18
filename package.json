@@ -1,0 +1,30 @@
+{
+  "name": "pangu-ts",
+  "version": "0.0.1",
+  "description": "pangu, the support of spacing for CJK, by TS",
+  "keywords": [
+    "pangu",
+    "typescript",
+    "text-spacing",
+    "cjk"
+  ],
+  "author": "MengLuoRJ <mengluor@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/MengLuoRJ/pangu-ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MengLuoRJ/pangu-ts"
+  },
+  "bugs": {
+    "url": "https://github.com/MengLuoRJ/pangu-ts/issues"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.18",
+    "typescript": "^4.8.3"
+  }
+}
