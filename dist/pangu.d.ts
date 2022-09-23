@@ -3,7 +3,7 @@ declare class Pangu {
     constructor();
     convertToFullwidth(symbols: string): string;
     spacing(text: string): string;
-    spacingText(text: string, callback?: () => void): string;
+    spacingText(text: string, callback?: Function): any;
     spacingTextSync(text: string): string;
 }
 declare const pangu: Pangu;

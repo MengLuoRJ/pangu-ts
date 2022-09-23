@@ -1,6 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.Pangu = exports.pangu = void 0;
 // CJK is an acronym for Chinese, Japanese, and Korean.
 //
 // CJK includes the following Unicode blocks:
@@ -136,14 +133,17 @@ class Pangu {
         // String.prototype.replace = String.prototype.rawReplace;
         return newText;
     }
-    spacingText(text, callback = () => { }) {
-        return this.spacing(text);
+    spacingText(text, callback) {
+        const newText = this.spacing(text);
+        if (typeof callback === 'function') {
+            return callback(newText);
+        }
+        return newText;
     }
     spacingTextSync(text) {
         return this.spacing(text);
     }
 }
-exports.Pangu = Pangu;
 const pangu = new Pangu();
-exports.pangu = pangu;
-exports.default = pangu;
+export default pangu;
+export { pangu, Pangu };

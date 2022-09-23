@@ -1,6 +1,6 @@
 {
   "name": "pangu-ts",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "pangu, the support of spacing for CJK, by TS",
   "keywords": [
     "pangu",
@@ -23,6 +23,7 @@
   "scripts": {
     "build": "tsc"
   },
+  "type": "module",
   "devDependencies": {
     "@types/node": "^18.7.18",
     "typescript": "^4.8.3"

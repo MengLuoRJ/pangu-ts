@@ -172,8 +172,12 @@ class Pangu {
     return newText;
   }
 
-  spacingText(text: string, callback = () => {}) {
-    return this.spacing(text);
+  spacingText(text: string, callback?: Function) {
+    const newText = this.spacing(text);
+    if (typeof callback === 'function') {
+      return callback(newText);
+    }
+    return newText;
   }
 
   spacingTextSync(text: string) {
