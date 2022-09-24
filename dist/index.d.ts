@@ -7,5 +7,5 @@ declare class Pangu {
     spacingTextSync(text: string): string;
 }
 declare const pangu: Pangu;
-export default pangu;
-export { pangu, Pangu };
+
+export { Pangu, pangu as default, pangu };
